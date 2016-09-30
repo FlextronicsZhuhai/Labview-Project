@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	meter{ 
+		-webkit-transform: 	rotate(270deg) translateY(-120px) translateX(127px);
+		-moz-transform: 	rotate(270deg) translateY(-120px) translateX(127px);
+		-o-transform: 		rotate(270deg) translateY(-120px) translateX(127px);
+		transform:  		rotate(270deg) translateY(-120px) translateX(127px);
+	}
+	#graphView {
+		width:960px;
+		background-color: #777;
+		height: 500px;
+		margin: auto;
+		padding-top: 20px;
+	
+	}
+	#graphView canvas {
+		float:left;
+		display:block;
+		margin-left: 55px;
+		
+	}
+	
+	#graphView meter {
+		float:right;
+		margin-top: 256px;
+	}
+</style>
+</head>
+<body>
+<div id="graphView">
+	<center>
+<p>
+	<b>Lab 5 - HTTP Request to LabView
+	<br>Michael Golov - ELEC516</b>
+</p>
+</center>
+<!-- Make a rectangle to draw in, called a canvas -->
+<div>
+<canvas id="mainCanvas" width="600" height="300" style=""></canvas>
+<!-- Make a meter to show scalar values -->
+<meter value="0" min="0" max="125" style="height:50px; width:300px" id="meterBar"> Temperature Meter </meter> 
+ <br> 
+ <center>
+<p> Current reading: <span id="tempValTxt">0</span> C</p>
+</center>
+
+</div>
+<!-- Edit filename so matches the actual JavaScript filename, located in same folder -->
+<script src="Lab7_HTTP_LV_MG.js">
+</script>
+
+</body>
+</html>
